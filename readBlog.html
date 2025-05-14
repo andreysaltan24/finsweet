@@ -1,317 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
-    <title>Read Blog</title>
-    <script
-      type="module"
-      crossorigin=""
-      src="./js/app.min.js?v=1746972878451"
-    ></script>
-    <link
-      rel="stylesheet"
-      crossorigin=""
-      href="./css/app.min.css?v=1746972878451"
-    />
-    <link
-      rel="stylesheet"
-      crossorigin=""
-      href="./css/readBlog.min.css?v=1746972878451"
-    />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header data-fls-header="" class="header">
-        <div class="header__container">
-          <a href="./index.html" class="header__logo">
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAAcCAYAAACu9KujAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASpSURBVHgB7Vr9dds4DIf78v9pg+omiG+CshOcb4IqEySdIL4JzpnA7gRJJ7A6wbkTSDdBfBOwgA3GMAxSVNMmVp9+79EUiQ9+gAJBygAC3nuHaYmp8QdUMGLwuAgPaNAZZvcw4pfEG/F8CyN+WUzCA/loRVth+oKpnkwmrSQga4EZeYBLTIUgfULemr3Dn0rfR6RtYcQPB873ArPfRNUW5/qjxVj6Y6wTSq8xPXobFfPMDdpbGPFToGIqQqN5LnroI4VTzBYwYnB405N/3MeHjFzXbbgIgoMRr4oc1933jS5VmQK1GkacPbL26MRbWwgaRXob5i/hdFFsQtRt6GspshfRfJDtXEgs4zBNZVvcXqt4S90vrZ/jkEL32aARnsas+jPl9KSHx9J56jDmACAyD2IeiwTtMIaU6zZoMUiZZNRt0IifbuWsaL5hA1mTcuvjJ4Bdn6Qst6FRJMbqVHuNoleKnjqREJIxTsd4Gtmez7eL0x2UeGlD3/tM3ULH0ueBJm7KMoVBd0JnpWgLQbNkp8pIOVhGjLzMlL/9LkPjw78GcaEM3Xg7EHsUtPtnGFrqS3fYNghhzfUriyZk14p2k6A1guYStJm30UTqK2XkKsIXmw/qS8ouXtBcbNJJeRlZdRqx6LyvoZvQIb9/cyxjSYNoeqPaP/EQgrZQpKVo18I0MqaHxALxYjzBIBJr1V9Np3Ip5LXBF13y2iZW1B2Cm5fEU7DBgcPK4CkS8oU/XpxXmH5XKeBByTqVa8w4v1T1Nf1wu07RVmI8LWafdZueYwNeEKWi34VAkvNa0fX1cico6n6P6RoOAyK8A3uyXwptB73G9EGUadJoVW+Y9hWMO3rGRpVLnvTY5L3jfGr0YSdvyJDOuShfGjx0N7019O74lXyp9UNPXPBHiBaODV3CGQP7vGKXeq1I4VizA/LUmF1Jg5PH4Hqn5GSZDBA8iPOnxzJ5rJL1AQ7yvaLlqSr4weh7YXI2wImmPZtcdJ1gc7B/0z+o+q+qTPRSlP9SdH0s+gIDQ6+PGucGerMxW/nDpQklcsGlYqXg5ZMo0z4tvUElnlv2cjUc3spK6avFs3UJQvrvIAFs47+E/B2cxhLPwiANrfYvwgNOHE0MpRuOSqUhKVh7KyZ3k1Bfc04BlOvg0c8BtBVsMr+/W325ZI/1vdgFp3LLGuobTUaUexsFNnLCvCHzf3iI7NMB4c1fYfrHoB9de0Z0lZjWWE8f/1uuI+NTYEex0B9hEYgYqRTyu//ucV+0PBlQby1avuD2qZ9bCGPy+V+vfCZf33P0UsmXBs+8Q//a72+X1jn99KfnaYI+j1u6Hgxd1lk3hUrJO98PTsnfdPBXgwzGcEXP4XjPJTjY76VO1bewD9o0rD2wVuXPGTzhrPseuo+FATMlX2P2N+TDKXkdg9jwp7dC5u2YsVJe5Y0WfJWPXwE+cj/Mixbfce+d4Jkm5pH6vfJxrDv6VHrbi0j5KtF+xTwN8zecZvLPgY9gn+muOLo9W/jTc24buSx5MfjjT4gt7PuUE5yBP3zqpHzLKVu+S/k8sooqGDF4yD06z8+PGCQmukK4wZKr6td2gyOej2+I0RQfAC9fJwAAAABJRU5ErkJggg=="
-              alt="Logo Image"
-            />
-          </a>
-          <div class="header__menu menu">
-            <button type="button" data-fls-menu="" class="menu__icon icon-menu">
-              <span></span>
-            </button>
-            <nav class="menu__body">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="./index.html" class="menu__link">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./about.html" class="menu__link">About us</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./features.html" class="menu__link">Features</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./pricing.html" class="menu__link">Pricing</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./faq.html" class="menu__link">FAQ</a>
-                </li>
-                <li class="menu__item">
-                  <a href="./blog.html" class="menu__link">Blog</a>
-                </li>
-              </ul>
-              <a href="./contact.html" class="header__button">Contact us</a>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <main class="page page--read-blog read-blog">
-        <section class="read-blog__study study">
-          <div class="study__container">
-            <div class="study__head">
-              <h1 class="study__title">
-                A UX Case Study on Creating a
-                <br />
-                Studious Environment for Students
-              </h1>
-              <div class="study__autor">
-                <p>Andrew Jonson Posted on 27th January 2021</p>
-              </div>
-            </div>
-            <div class="study__image">
-              <img
-                src="./assets/img/blogBlogPage/people%20working%20in%20front%20of%20computer.jpg"
-                alt="People working in front of computer"
-              />
-            </div>
-          </div>
-        </section>
-        <section class="read-blog__story story">
-          <div class="story__container">
-            <article class="story__article">
-              <div class="story__head">
-                <h2 class="story__title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </h2>
-                <div class="story__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                  </p>
-                </div>
-              </div>
-              <div class="story__body">
-                <h2 class="story__title">
-                  Ut enim ad minim veniam, quis nostrud.
-                </h2>
-                <div class="story__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                  </p>
-                </div>
-                <ul class="story__list">
-                  <li class="story__item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do.
-                  </li>
-                  <li class="story__item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do.
-                  </li>
-                  <li class="story__item">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do.
-                  </li>
-                </ul>
-                <div class="story__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                  </p>
-                </div>
-              </div>
-              <div class="story__image">
-                <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    srcset="
-                      ./assets/img/blogBlogPage/people-near-wooden-table-600.webp    1x,
-                      ./assets/img/blogBlogPage/people-near-wooden-table-600-2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    media="(max-width: 1200px)"
-                    srcset="
-                      ./assets/img/blogBlogPage/people-near-wooden-table-1200.webp    1x,
-                      ./assets/img/blogBlogPage/people-near-wooden-table-1200-2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    alt="People near wooden table"
-                    src="./assets/img/blogBlogPage/people-near-wooden-table.webp"
-                    srcset="
-                      ./assets/img/blogBlogPage/people-near-wooden-table.webp    1x,
-                      ./assets/img/blogBlogPage/people-near-wooden-table-2x.webp 2x
-                    "
-                  />
-                </picture>
-              </div>
-              <div class="story__bottom">
-                <h2 class="story__title">
-                  Ut enim ad minim veniam, quis nostrud.
-                </h2>
-                <div class="story__text">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id
-                    est laborum.
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-      </main>
-      <footer data-fls-footer="" class="footer">
-        <div class="footer__top top-footer">
-          <div class="top-footer__container">
-            <div class="top-footer__content">
-              <div class="top-footer__company">
-                <a href="./index.html" class="top-footer__logo">
-                  <img
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAAcCAYAAACu9KujAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASpSURBVHgB7Vr9dds4DIf78v9pg+omiG+CshOcb4IqEySdIL4JzpnA7gRJJ7A6wbkTSDdBfBOwgA3GMAxSVNMmVp9+79EUiQ9+gAJBygAC3nuHaYmp8QdUMGLwuAgPaNAZZvcw4pfEG/F8CyN+WUzCA/loRVth+oKpnkwmrSQga4EZeYBLTIUgfULemr3Dn0rfR6RtYcQPB873ArPfRNUW5/qjxVj6Y6wTSq8xPXobFfPMDdpbGPFToGIqQqN5LnroI4VTzBYwYnB405N/3MeHjFzXbbgIgoMRr4oc1933jS5VmQK1GkacPbL26MRbWwgaRXob5i/hdFFsQtRt6GspshfRfJDtXEgs4zBNZVvcXqt4S90vrZ/jkEL32aARnsas+jPl9KSHx9J56jDmACAyD2IeiwTtMIaU6zZoMUiZZNRt0IifbuWsaL5hA1mTcuvjJ4Bdn6Qst6FRJMbqVHuNoleKnjqREJIxTsd4Gtmez7eL0x2UeGlD3/tM3ULH0ueBJm7KMoVBd0JnpWgLQbNkp8pIOVhGjLzMlL/9LkPjw78GcaEM3Xg7EHsUtPtnGFrqS3fYNghhzfUriyZk14p2k6A1guYStJm30UTqK2XkKsIXmw/qS8ouXtBcbNJJeRlZdRqx6LyvoZvQIb9/cyxjSYNoeqPaP/EQgrZQpKVo18I0MqaHxALxYjzBIBJr1V9Np3Ip5LXBF13y2iZW1B2Cm5fEU7DBgcPK4CkS8oU/XpxXmH5XKeBByTqVa8w4v1T1Nf1wu07RVmI8LWafdZueYwNeEKWi34VAkvNa0fX1cico6n6P6RoOAyK8A3uyXwptB73G9EGUadJoVW+Y9hWMO3rGRpVLnvTY5L3jfGr0YSdvyJDOuShfGjx0N7019O74lXyp9UNPXPBHiBaODV3CGQP7vGKXeq1I4VizA/LUmF1Jg5PH4Hqn5GSZDBA8iPOnxzJ5rJL1AQ7yvaLlqSr4weh7YXI2wImmPZtcdJ1gc7B/0z+o+q+qTPRSlP9SdH0s+gIDQ6+PGucGerMxW/nDpQklcsGlYqXg5ZMo0z4tvUElnlv2cjUc3spK6avFs3UJQvrvIAFs47+E/B2cxhLPwiANrfYvwgNOHE0MpRuOSqUhKVh7KyZ3k1Bfc04BlOvg0c8BtBVsMr+/W325ZI/1vdgFp3LLGuobTUaUexsFNnLCvCHzf3iI7NMB4c1fYfrHoB9de0Z0lZjWWE8f/1uuI+NTYEex0B9hEYgYqRTyu//ucV+0PBlQby1avuD2qZ9bCGPy+V+vfCZf33P0UsmXBs+8Q//a72+X1jn99KfnaYI+j1u6Hgxd1lk3hUrJO98PTsnfdPBXgwzGcEXP4XjPJTjY76VO1bewD9o0rD2wVuXPGTzhrPseuo+FATMlX2P2N+TDKXkdg9jwp7dC5u2YsVJe5Y0WfJWPXwE+cj/Mixbfce+d4Jkm5pH6vfJxrDv6VHrbi0j5KtF+xTwN8zecZvLPgY9gn+muOLo9W/jTc24buSx5MfjjT4gt7PuUE5yBP3zqpHzLKVu+S/k8sooqGDF4yD06z8+PGCQmukK4wZKr6td2gyOej2+I0RQfAC9fJwAAAABJRU5ErkJggg=="
-                    alt="Logo Footer"
-                  />
-                </a>
-                <div class="top-footer__text">
-                  <p>
-                    We are always open to discuss your project and improve your
-                    online presence.
-                  </p>
-                </div>
-              </div>
-              <div class="top-footer__social social-footer">
-                <h3 class="social-footer__title">Lets Talk!</h3>
-                <div class="social-footer__text">
-                  <p>
-                    We are always open to discuss your project, improve your
-                    online presence and help with your UX/UI design challenges.
-                  </p>
-                </div>
-                <div class="social-footer__links">
-                  <a
-                    class="social-footer__link --icon-fbWhite"
-                    href="https://www.facebook.com"
-                  ></a>
-                  <a
-                    class="social-footer__link --icon-twWhite"
-                    href="https://x.com"
-                  ></a>
-                  <a
-                    class="social-footer__link --icon-instagramWhite"
-                    href="https://www.instagram.com/"
-                  ></a>
-                  <a
-                    class="social-footer__link --icon-linkedInWhite"
-                    href="https://www.linkedin.com"
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="top-footer__contact-us contact-us">
-              <div class="contact-us__body">
-                <address class="contact-us__email">
-                  <div class="contact-us__label">Email me at</div>
-                  <a href="mailto:contact@website.com" class="contact-us__mail"
-                    >contact@website.com</a
-                  >
-                </address>
-                <address class="contact-us__email">
-                  <div class="contact-us__label">Call us</div>
-                  <a href="tel:0927 6277 28525" class="contact-us__number"
-                    >0927 6277 28525</a
-                  >
-                </address>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="footer__bottom bottom-footer">
-          <div class="bottom-footer__container">
-            <div class="bottom-footer__copy">Copyright 2021, Finsweet.com</div>
-            <nav class="bottom-footer__nav nav-footer">
-              <ul class="nav-footer__list">
-                <li class="nav-footer__item">
-                  <a href="./index.html" class="nav-footer__link">Home</a>
-                </li>
-                <li class="nav-footer__item">
-                  <a href="./about.html" class="nav-footer__link">About us</a>
-                </li>
-                <li class="nav-footer__item">
-                  <a href="./features.html" class="nav-footer__link"
-                    >Features</a
-                  >
-                </li>
-                <li class="nav-footer__item">
-                  <a href="./pricing.html" class="nav-footer__link">Pricing</a>
-                </li>
-                <li class="nav-footer__item">
-                  <a href="./faq.html" class="nav-footer__link">FAQ</a>
-                </li>
-                <li class="nav-footer__item">
-                  <a href="./blog.html" class="nav-footer__link">Blog</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Read Blog</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1747249954679"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1747249954679">
+		<link rel="stylesheet" crossorigin="" href="./css/readBlog.min.css?v=1747249954679">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<a href="./index.html" class="header__logo">
+						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAAcCAYAAACu9KujAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASpSURBVHgB7Vr9dds4DIf78v9pg+omiG+CshOcb4IqEySdIL4JzpnA7gRJJ7A6wbkTSDdBfBOwgA3GMAxSVNMmVp9+79EUiQ9+gAJBygAC3nuHaYmp8QdUMGLwuAgPaNAZZvcw4pfEG/F8CyN+WUzCA/loRVth+oKpnkwmrSQga4EZeYBLTIUgfULemr3Dn0rfR6RtYcQPB873ArPfRNUW5/qjxVj6Y6wTSq8xPXobFfPMDdpbGPFToGIqQqN5LnroI4VTzBYwYnB405N/3MeHjFzXbbgIgoMRr4oc1933jS5VmQK1GkacPbL26MRbWwgaRXob5i/hdFFsQtRt6GspshfRfJDtXEgs4zBNZVvcXqt4S90vrZ/jkEL32aARnsas+jPl9KSHx9J56jDmACAyD2IeiwTtMIaU6zZoMUiZZNRt0IifbuWsaL5hA1mTcuvjJ4Bdn6Qst6FRJMbqVHuNoleKnjqREJIxTsd4Gtmez7eL0x2UeGlD3/tM3ULH0ueBJm7KMoVBd0JnpWgLQbNkp8pIOVhGjLzMlL/9LkPjw78GcaEM3Xg7EHsUtPtnGFrqS3fYNghhzfUriyZk14p2k6A1guYStJm30UTqK2XkKsIXmw/qS8ouXtBcbNJJeRlZdRqx6LyvoZvQIb9/cyxjSYNoeqPaP/EQgrZQpKVo18I0MqaHxALxYjzBIBJr1V9Np3Ip5LXBF13y2iZW1B2Cm5fEU7DBgcPK4CkS8oU/XpxXmH5XKeBByTqVa8w4v1T1Nf1wu07RVmI8LWafdZueYwNeEKWi34VAkvNa0fX1cico6n6P6RoOAyK8A3uyXwptB73G9EGUadJoVW+Y9hWMO3rGRpVLnvTY5L3jfGr0YSdvyJDOuShfGjx0N7019O74lXyp9UNPXPBHiBaODV3CGQP7vGKXeq1I4VizA/LUmF1Jg5PH4Hqn5GSZDBA8iPOnxzJ5rJL1AQ7yvaLlqSr4weh7YXI2wImmPZtcdJ1gc7B/0z+o+q+qTPRSlP9SdH0s+gIDQ6+PGucGerMxW/nDpQklcsGlYqXg5ZMo0z4tvUElnlv2cjUc3spK6avFs3UJQvrvIAFs47+E/B2cxhLPwiANrfYvwgNOHE0MpRuOSqUhKVh7KyZ3k1Bfc04BlOvg0c8BtBVsMr+/W325ZI/1vdgFp3LLGuobTUaUexsFNnLCvCHzf3iI7NMB4c1fYfrHoB9de0Z0lZjWWE8f/1uuI+NTYEex0B9hEYgYqRTyu//ucV+0PBlQby1avuD2qZ9bCGPy+V+vfCZf33P0UsmXBs+8Q//a72+X1jn99KfnaYI+j1u6Hgxd1lk3hUrJO98PTsnfdPBXgwzGcEXP4XjPJTjY76VO1bewD9o0rD2wVuXPGTzhrPseuo+FATMlX2P2N+TDKXkdg9jwp7dC5u2YsVJe5Y0WfJWPXwE+cj/Mixbfce+d4Jkm5pH6vfJxrDv6VHrbi0j5KtF+xTwN8zecZvLPgY9gn+muOLo9W/jTc24buSx5MfjjT4gt7PuUE5yBP3zqpHzLKVu+S/k8sooqGDF4yD06z8+PGCQmukK4wZKr6td2gyOej2+I0RQfAC9fJwAAAABJRU5ErkJggg==" alt="Logo Image">
+					</a>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" aria-label="menu" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="./index.html" class="menu__link">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="./about.html" class="menu__link">About us</a>
+								</li>
+								<li class="menu__item">
+									<a href="./features.html" class="menu__link">Features</a>
+								</li>
+								<li class="menu__item">
+									<a href="./pricing.html" class="menu__link">Pricing</a>
+								</li>
+								<li class="menu__item">
+									<a href="./faq.html" class="menu__link">FAQ</a>
+								</li>
+								<li class="menu__item">
+									<a href="./blog.html" class="menu__link">Blog</a>
+								</li>
+							</ul>
+							<a href="./contact.html" class="header__button">Contact us</a>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.js?v=1747249954679on">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page page--read-blog read-blog">
+				<section class="read-blog__study study">
+					<div class="study__container">
+						<div class="study__head">
+							<h1 class="study__title">
+								A UX Case Study on Creating a
+								<br>
+								Studious Environment for Students
+							</h1>
+							<div class="study__autor">
+								<p>Andrew Jonson Posted on 27th January 2021</p>
+							</div>
+						</div>
+						<div class="study__image">
+							<picture>
+								<source media="(max-width: 500px)" srcset="./assets/img/blogBlogPage/people-working-in-front-of-computer-500.webp 1x,./assets/img/blogBlogPage/people-working-in-front-of-computer-500-2x.webp 2x" type="image/webp">
+								<source media="(max-width: 1000px)" srcset="./assets/img/blogBlogPage/people-working-in-front-of-computer-1000.webp 1x,./assets/img/blogBlogPage/people-working-in-front-of-computer-1000-2x.webp 2x" type="image/webp">
+								<img alt="People working in front of computer" src="./assets/img/blogBlogPage/people-working-in-front-of-computer.webp" srcset="./assets/img/blogBlogPage/people-working-in-front-of-computer.webp 1x,./assets/img/blogBlogPage/people-working-in-front-of-computer-2x.webp 2x">
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="read-blog__story story">
+					<div class="story__container">
+						<article class="story__article">
+							<div class="story__head">
+								<h2 class="story__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+								<div class="story__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								</div>
+							</div>
+							<div class="story__body">
+								<h2 class="story__title">Ut enim ad minim veniam, quis nostrud.</h2>
+								<div class="story__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								</div>
+								<ul class="story__list">
+									<li class="story__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+									<li class="story__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+									<li class="story__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</li>
+								</ul>
+								<div class="story__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								</div>
+							</div>
+							<div class="story__image">
+								<picture>
+									<source media="(max-width: 500px)" srcset="./assets/img/blogBlogPage/people-near-wooden-table-500.webp 1x,./assets/img/blogBlogPage/people-near-wooden-table-500-2x.webp 2x" type="image/webp">
+									<source media="(max-width: 1000px)" srcset="./assets/img/blogBlogPage/people-near-wooden-table-1000.webp 1x,./assets/img/blogBlogPage/people-near-wooden-table-1000-2x.webp 2x" type="image/webp">
+									<img alt="People near wooden table" src="./assets/img/blogBlogPage/people-near-wooden-table.webp" srcset="./assets/img/blogBlogPage/people-near-wooden-table.webp 1x,./assets/img/blogBlogPage/people-near-wooden-table-2x.webp 2x">
+								</picture>
+							</div>
+							<div class="story__bottom">
+								<h2 class="story__title">Ut enim ad minim veniam, quis nostrud.</h2>
+								<div class="story__text">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__top top-footer">
+					<div class="top-footer__container">
+						<div class="top-footer__content">
+							<div class="top-footer__company">
+								<a href="./index.html" class="top-footer__logo">
+									<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAAAcCAYAAACu9KujAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASpSURBVHgB7Vr9dds4DIf78v9pg+omiG+CshOcb4IqEySdIL4JzpnA7gRJJ7A6wbkTSDdBfBOwgA3GMAxSVNMmVp9+79EUiQ9+gAJBygAC3nuHaYmp8QdUMGLwuAgPaNAZZvcw4pfEG/F8CyN+WUzCA/loRVth+oKpnkwmrSQga4EZeYBLTIUgfULemr3Dn0rfR6RtYcQPB873ArPfRNUW5/qjxVj6Y6wTSq8xPXobFfPMDdpbGPFToGIqQqN5LnroI4VTzBYwYnB405N/3MeHjFzXbbgIgoMRr4oc1933jS5VmQK1GkacPbL26MRbWwgaRXob5i/hdFFsQtRt6GspshfRfJDtXEgs4zBNZVvcXqt4S90vrZ/jkEL32aARnsas+jPl9KSHx9J56jDmACAyD2IeiwTtMIaU6zZoMUiZZNRt0IifbuWsaL5hA1mTcuvjJ4Bdn6Qst6FRJMbqVHuNoleKnjqREJIxTsd4Gtmez7eL0x2UeGlD3/tM3ULH0ueBJm7KMoVBd0JnpWgLQbNkp8pIOVhGjLzMlL/9LkPjw78GcaEM3Xg7EHsUtPtnGFrqS3fYNghhzfUriyZk14p2k6A1guYStJm30UTqK2XkKsIXmw/qS8ouXtBcbNJJeRlZdRqx6LyvoZvQIb9/cyxjSYNoeqPaP/EQgrZQpKVo18I0MqaHxALxYjzBIBJr1V9Np3Ip5LXBF13y2iZW1B2Cm5fEU7DBgcPK4CkS8oU/XpxXmH5XKeBByTqVa8w4v1T1Nf1wu07RVmI8LWafdZueYwNeEKWi34VAkvNa0fX1cico6n6P6RoOAyK8A3uyXwptB73G9EGUadJoVW+Y9hWMO3rGRpVLnvTY5L3jfGr0YSdvyJDOuShfGjx0N7019O74lXyp9UNPXPBHiBaODV3CGQP7vGKXeq1I4VizA/LUmF1Jg5PH4Hqn5GSZDBA8iPOnxzJ5rJL1AQ7yvaLlqSr4weh7YXI2wImmPZtcdJ1gc7B/0z+o+q+qTPRSlP9SdH0s+gIDQ6+PGucGerMxW/nDpQklcsGlYqXg5ZMo0z4tvUElnlv2cjUc3spK6avFs3UJQvrvIAFs47+E/B2cxhLPwiANrfYvwgNOHE0MpRuOSqUhKVh7KyZ3k1Bfc04BlOvg0c8BtBVsMr+/W325ZI/1vdgFp3LLGuobTUaUexsFNnLCvCHzf3iI7NMB4c1fYfrHoB9de0Z0lZjWWE8f/1uuI+NTYEex0B9hEYgYqRTyu//ucV+0PBlQby1avuD2qZ9bCGPy+V+vfCZf33P0UsmXBs+8Q//a72+X1jn99KfnaYI+j1u6Hgxd1lk3hUrJO98PTsnfdPBXgwzGcEXP4XjPJTjY76VO1bewD9o0rD2wVuXPGTzhrPseuo+FATMlX2P2N+TDKXkdg9jwp7dC5u2YsVJe5Y0WfJWPXwE+cj/Mixbfce+d4Jkm5pH6vfJxrDv6VHrbi0j5KtF+xTwN8zecZvLPgY9gn+muOLo9W/jTc24buSx5MfjjT4gt7PuUE5yBP3zqpHzLKVu+S/k8sooqGDF4yD06z8+PGCQmukK4wZKr6td2gyOej2+I0RQfAC9fJwAAAABJRU5ErkJggg==" alt="Logo Footer">
+								</a>
+								<div class="top-footer__text">
+									<p>
+										We are always open to discuss your project and improve your online
+              presence.
+									</p>
+								</div>
+							</div>
+							<div class="top-footer__social social-footer">
+								<h3 class="social-footer__title">Lets Talk!</h3>
+								<div class="social-footer__text">
+									<p>
+										We are always open to discuss your project, improve your online
+              presence and help with your UX/UI design challenges.
+									</p>
+								</div>
+								<div class="social-footer__links">
+									<a class="social-footer__link --icon-fbWhite" href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer"></a>
+									<a class="social-footer__link --icon-twWhite" href="https://x.com" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer"></a>
+									<a class="social-footer__link --icon-instagramWhite" href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"></a>
+									<a class="social-footer__link --icon-linkedInWhite" href="https://www.linkedin.com" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"></a>
+								</div>
+							</div>
+						</div>
+						<div class="top-footer__contact-us contact-us">
+							<div class="contact-us__body">
+								<address class="contact-us__email">
+									<div class="contact-us__label">Email me at</div>
+									<a href="mailto:contact@website.com" class="contact-us__mail">contact@website.com</a>
+								</address>
+								<address class="contact-us__email">
+									<div class="contact-us__label">Call us</div>
+									<a href="tel:0927 6277 28525" class="contact-us__number">0927 6277 28525</a>
+								</address>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__container">
+						<div class="bottom-footer__copy">Copyright 2021, Finsweet.com</div>
+						<nav class="bottom-footer__nav nav-footer">
+							<ul class="nav-footer__list">
+								<li class="nav-footer__item">
+									<a href="./index.html" class="nav-footer__link">Home</a>
+								</li>
+								<li class="nav-footer__item">
+									<a href="./about.html" class="nav-footer__link">About us</a>
+								</li>
+								<li class="nav-footer__item">
+									<a href="./features.html" class="nav-footer__link">Features</a>
+								</li>
+								<li class="nav-footer__item">
+									<a href="./pricing.html" class="nav-footer__link">Pricing</a>
+								</li>
+								<li class="nav-footer__item">
+									<a href="./faq.html" class="nav-footer__link">FAQ</a>
+								</li>
+								<li class="nav-footer__item">
+									<a href="./blog.html" class="nav-footer__link">Blog</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
 </html>
